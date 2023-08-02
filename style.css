@@ -1,0 +1,241 @@
+.wrapper {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #747474;
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.circles {
+  display: flex;
+  justify-content: center;
+}
+.circle {
+  margin: 0 1rem;
+  height: 2rem;
+  width: 2rem;
+  box-sizing: border-box;
+  background-color: aqua;
+  border: 3 solid transparent;
+  border-radius: 50%;
+}
+
+#c1 {
+  background-color: aqua;
+  animation: c1 1s linear infinite;
+}
+@keyframes c1 {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+
+  75% {
+    background-color: aqua;
+  }
+}
+#c2 {
+  background-color: rgb(0, 255, 128);
+  animation: c2 1s linear infinite;
+}
+@keyframes c2 {
+  0% {
+    background-color: rgb(0, 255, 128);
+  }
+
+  25% {
+    background-color: white;
+  }
+}
+#c3 {
+  background-color: rgb(136, 0, 255);
+  animation: c3 1s linear infinite;
+}
+@keyframes c3 {
+  0% {
+    background-color: rgb(136, 0, 255);
+  }
+
+  50% {
+    background-color: white;
+  }
+}
+#c4 {
+  background-color: rgb(255, 0, 195);
+  animation: c4 1s linear infinite;
+}
+@keyframes c4 {
+  0% {
+    background-color: rgb(255, 0, 195);
+  }
+
+  75% {
+    background-color: white;
+  }
+}
+
+.button-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btn {
+  height: 3rem;
+  width: 7rem;
+  margin: 0 1rem;
+  border: 1px solid rgb(255, 0, 195);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+.btn:hover {
+  border: 3px solid rgb(255, 0, 195);
+  background-color: rgb(255, 0, 195);
+  color: white;
+  font-weight: bold;
+}
+#btn-2 {
+  border: 1px solid rgb(0, 255, 128);
+}
+#btn-2:hover {
+  border: 3px solid rgb(0, 255, 128);
+  background-color: rgb(0, 255, 128);
+}
+
+.card {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(210, 193, 255);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 550px;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+  box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+  animation: shadow 2s linear infinite;
+}
+@keyframes shadow {
+  0% {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+    box-shadow: 0px 0px 50px 0px rgba(99, 77, 223, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 50px 50px rgba(99, 77, 223, 0.2);
+    -moz-box-shadow: 0px 0px 50px 50px rgba(99, 77, 223, 0.2);
+    box-shadow: 0px 0px 50px 50px rgba(99, 77, 223, 0.2);
+  }
+}
+
+.card-text {
+  margin-top: 2rem;
+  text-align: center;
+  z-index: 10000;
+  font-size: 3rem;
+  color: #480f53;
+}
+.card-img {
+  position: absolute;
+}
+#fl {
+  top: 0;
+  left: 0;
+  width: 400px;
+}
+#fr {
+  top: 0;
+  right: 0;
+  width: 400px;
+}
+#d1 {
+  top: 100px;
+  right: 20px;
+  transform: scale(-1, 1);
+}
+#d2 {
+  top: 50px;
+  left: 40%;
+}
+#d3 {
+  top: 60%;
+  left: 70%;
+}
+#d4 {
+  top: 70%;
+  left: 0;
+}
+#d5 {
+  top: 10%;
+  left: 3%;
+  transform: scale(-1, 1);
+}
+#d6 {
+  top: 60%;
+  left: 40%;
+}
+#egg {
+  width: 70px;
+  top: 20%;
+  left: 30%;
+  animation: egg 2s linear infinite;
+}
+#egg2 {
+  width: 70px;
+  top: 55%;
+  right: 7%;
+  animation: egg 3s linear infinite;
+}
+#egg3 {
+  width: 70px;
+  top: 70%;
+  left: 30%;
+  animation: egg 2.5s linear infinite;
+}
+@keyframes egg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes egg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
